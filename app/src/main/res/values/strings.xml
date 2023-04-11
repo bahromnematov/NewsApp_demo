@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewsApp_demo</string>
+    <string name="news_app">News App</string>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

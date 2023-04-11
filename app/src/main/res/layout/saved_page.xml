@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:background="@color/white"
+        android:layout_height="?actionBarSize">
+<!--        <ImageView-->
+<!--            android:id="@+id/image_logo"-->
+<!--            android:layout_marginStart="8sp"-->
+<!--            android:layout_width="54dp"-->
+<!--            android:layout_height="54dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/news_logo"-->
+<!--            android:contentDescription="@string/app_name" />-->
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="4dp"
+            android:layout_marginStart="8sp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="119dp"
+            android:layout_marginBottom="17dp"
+            android:layout_toEndOf="@id/image_logo"
+            android:text="Saveds"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_saved_news"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:clipToPadding="true"
+        tools:listitem="@layout/list_item_news" />
+
+</LinearLayout>
